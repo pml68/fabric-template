@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "example",
+  "version": "0.1.0",
+  "name": "Example mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/pml68/fabric-template"
+  },
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.template.ExampleMod"
+      }
+    ]
+  },
+  "mixins": [
+    "example.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.20.4",
+    "java": ">=21",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=1.12.3+kotlin.2.0.21"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
